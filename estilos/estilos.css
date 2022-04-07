@@ -46,8 +46,9 @@ nav .navegacion__menu li{
     font-weight: bold;
     text-align: center;
     margin-top: 1.5rem;
+    color: #570D66;
     animation-name: aparecer;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
 }
 @keyframes aparecer {
