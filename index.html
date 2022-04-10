@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Se agrega Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Se agrega font de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>GG No team</title>
 </head>
 
-<body class="grid">
-    <header class="nav">
+<body>
+    <header class="">
         <!-- Barra de navegacion -->
-        <nav class="navegacion">
-            <div class="navegacion__logo">
-                <a href="index.html">
-                    <img src="images/logo-empresa.jpg" alt="Logo Empresa">
-                </a>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand navbar__imagen" href="index.html"><img src="images/logo-empresa.jpg" alt="Logo Empresa"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion__menu">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/store.html">Store</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ayuda.html">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/quienes-somos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <ul class="navegacion__menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/store.html">Store</a></li>
-                <li><a href="pages/ayuda.html">Ayuda</a></li>
-                <li><a href="pages/quienes-somos.html">Quienes somos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-
-        </nav>
+          </nav>
     </header>
-    <main class="main__grid">
-        <h1 class="titulo__index">GG NO TEAM STORE</h1>
-        <h3 class="subtitulo__index">Encontra lo que necesitas.</h3>
-        <section class="section__index">
-            <article class="caja__imagenes__index">
-                <!-- Fotos -->
-                <a href="pages/store.html"><img src="images/juegosps4.jpg" alt="Juegos PS4"></a>
-                <a href="pages/store.html"><img src="images/juegospc.jpg" alt="Juegos PC"></a>
-                <a href="pages/store.html"><img src="images/juegosxbox.jpg" alt="Juegos XBOX"></a>
+    <main>
+        <h1 class="index__titulo animate__bounceIn">GG NO TEAM</h1>
+        <h3 class="index__subtitulo">Encontrá lo que necesitas.</h3>
+        <section class="container">
+            <article id="carouselJuegosIndex" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/juegospc.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/juegosps4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/juegosxbox.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJuegosIndex"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselJuegosIndex"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </article>
+
             <article class="recomendacion__index">
                 <!-- Iframe recomendacion video -->
-                <h3 class="recomendaciones__index--titulo">Recomendacion del mes:</h3>
+
+                <h3 class="recomendaciones__index--titulo">Recomendación del mes:</h3>
                 <h4 class="recomendaciones__index--subtitulo">Elden Ring</h4>
                 <div class="recomendacion__video">
-                    <iframe class="recomendacion__iframe" width="560" height="315" src="https://www.youtube.com/embed/E3Huy2cdih0"
-                        title="YouTube video player" frameborder="0"
+                    <iframe class="recomendacion__iframe" width="560" height="315"
+                        src="https://www.youtube.com/embed/E3Huy2cdih0" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
@@ -104,12 +139,14 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="dataFiscal">
+    <footer class="container-fluid">
+        <div class="d-flex justify-content-around align-items-center footer__contenido">
             <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
-            <a href="https://www.afip.gob.ar/"><img src="images/datafiscal.jpg" alt="Datos Fiscales"></a>
+            <a href="https://www.afip.gob.ar/" target="_blank"><img src="images/datafiscal.jpg" alt="Datos Fiscales"></a>
         </div>
     </footer>
+    <!-- Se agrega Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
