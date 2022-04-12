@@ -19,127 +19,129 @@
     <title>GG No team</title>
 </head>
 
-<body>
-    <header>
-        <!-- Barra de navegacion -->
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand navbar__imagen" href="../index.html"><img src="../images/logo-empresa.jpg" alt="Logo Empresa"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion__menu">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/store.html">Store</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/ayuda.html">Ayuda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <main>
+<body class="container-fluid">
+  <header class="row">
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark col-xs-12 col-sm-12 col-md-12">
+        <div class="container">
+          <a class="navbar-brand navbar__imagen" href="../index.html"><img src="../images/logo-empresa.jpg" alt="Logo Empresa"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion__menu">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ayuda.html">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
         <!-- STORE -->
-        <h2 class="store__titulo animate__bounceIn">Store</h2>
+    <main class="row">
+        
         <!-- DECLARACION DE CARDS -->
-        <section class="container">
+        <section class="col-xs-12 col-sm-12 col-md-12">
+          <h2 class="store__titulo animate__bounceIn">Store</h2>
+            <div class="d-flex flex-column flex-sm-row flex-md-row align-items-center justify-content-sm-center flex-sm-wrap flex-md-wrap">
 
-            <div class="contenedor__cards">
-
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/deathstranding.jpg" class="card-img-top" alt="Death Stranding">
                 <div class="card-body">
                   <h5 class="card-title">Death Stranding</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/eldenring.jpg" class="card-img-top" alt="Elden Ring">
                 <div class="card-body">
                   <h5 class="card-title">Elden Ring</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/forza5.jpg" class="card-img-top" alt="Forza 5">
                 <div class="card-body">
                   <h5 class="card-title">Forza 5</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/godofwar.jpg" class="card-img-top" alt="God Of War">
                 <div class="card-body">
                   <h5 class="card-title">God Of War</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/gta5.jpg" class="card-img-top" alt="GTA V">
                 <div class="card-body">
                   <h5 class="card-title">GTA V</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/residentevil3.jpg" class="card-img-top" alt="Resident Evil">
                 <div class="card-body">
                   <h5 class="card-title">Resident Evil 5</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/csgo.jpg" class="card-img-top" alt="CS GO">
                 <div class="card-body">
                   <h5 class="card-title">CS GO</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card m-2" style="width: 20rem;">
                 <img src="../images/juegos/lol.jpg" class="card-img-top" alt="League of Legends">
                 <div class="card-body">
                   <h5 class="card-title">League of Legends</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem aspernatur magnam? Animi autem laborum voluptatibus officiis.</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary card-button">Comprar</a>
                 </div>
             </div>
         </div>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="container-fluid">
-        <div class="d-flex justify-content-around align-items-center footer__contenido">
-            <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
-            <a href="https://www.afip.gob.ar/" target="_blank"><img src="../images/datafiscal.jpg" alt="Datos Fiscales"></a>
-        </div>
-    </footer>
+    <footer class="row">
+      <div class="d-flex justify-content-around align-items-center col-xs-12 col-sm-12 col-md-12">
+          <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
+          <a href="https://www.afip.gob.ar/" target="_blank"><img class="logo__afip" src="../images/datafiscal.jpg" alt="Datos Fiscales"></a>
+      </div>
+  </footer>
+  <!-- Se agrega Bootstrap JS -->
+  <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

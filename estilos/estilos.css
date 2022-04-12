@@ -23,34 +23,70 @@
 }
 .index__titulo{
     font-size: 4rem;
+    font-weight: bold;
     text-align: center;
+    border: #570D66 solid 4px;
+    border-radius: 7px;
+    margin: 2rem;
 }
 .index__subtitulo{
     font-size: 2rem;
     text-align: center;
     font-style: italic;
+    margin-bottom: 2rem;
 }
 .recomendaciones__index--titulo{
     font-size: 3rem;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-.recomendaciones__index--subtitulo
-{
-    font-size: 2rem;
+.recomendaciones__index--subtitulo{
+    font-size: 3rem;
     text-align: center;
+    margin-bottom: 2rem;
+
 }
 .recomendacion__iframe{
     width: 30rem;
-    height: auto;
+    height: 35rem;
+    margin-bottom: 2rem;
 }
 .recomendacion__parrafos{
     font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 .negrita{
     font-weight: bold;
     font-size: 1.5rem;
     color: #570D66;
 }
+/* ------------ Store ------------ */
+.store__titulo{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    border: #570D66 solid 4px;
+    border-radius: 7px;
+    margin: 2rem;
+}
+.card-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-text{
+    font-size: 1.2rem;
+}
+.card-button{
+    font-size: 1.2rem;
+    background-color: red;
+    border: 0;
+}
+.card-img-top{
+    height: 17rem;
+}
+
+
 /* ------------ Footer ------------ */
 footer{
     background-color: #212529;
