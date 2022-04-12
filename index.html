@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>GG No team</title>
 </head>
-
-<body>
-    <header class="">
+<body class="container-fluid">
+    <header class="row">
         <!-- Barra de navegacion -->
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
               <a class="navbar-brand navbar__imagen" href="index.html"><img src="images/logo-empresa.jpg" alt="Logo Empresa"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,7 +50,8 @@
             </div>
           </nav>
     </header>
-    <main>
+    <main class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 index__contenido">
         <h1 class="index__titulo animate__bounceIn">GG NO TEAM</h1>
         <h3 class="index__subtitulo">Encontrá lo que necesitas.</h3>
         <section class="container">
@@ -94,7 +95,7 @@
                         conocido como las Tierras Intermedias. Su propósito: reclamar el poder del Círculo de Elden. Una
                         gesta que lo enfrentará a criaturas de pesadilla y un cruel destino.
 
-                        <span>La leyenda cuenta que la decadencia de las Tierras Intermedias comenzó el día que el
+                        <span class="negrita">La leyenda cuenta que la decadencia de las Tierras Intermedias comenzó el día que el
                             propio el
                             Círculo de Elden, el origen del Árbol Áureo, fue destruido y reducido a fragmentos de enorme
                             poder:
@@ -115,7 +116,7 @@
                         jugables
                         de la aventura y la esencia rolera de la gesta del Sinluz.
                     </p>
-                    <p>Miyazaki es muy concreto a la hora de definir la jugabilidad y el género de <span>Elden Ring: se
+                    <p>Miyazaki es muy concreto a la hora de definir la jugabilidad y el género de <span class="negrita">Elden Ring: se
                             trata de
                             un RPG de acción en tercera persona ambientado en un mundo abierto.</span> Eso sí, como
                         dijimos, un mundo
@@ -137,12 +138,13 @@
                 </div>
             </article>
         </section>
+      </div>
     </main>
     <!-- FOOTER -->
-    <footer class="container-fluid">
-        <div class="d-flex justify-content-around align-items-center footer__contenido">
+    <footer class="row">
+        <div class="d-flex justify-content-around align-items-center col-xs-12 col-sm-12 col-md-12">
             <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
-            <a href="https://www.afip.gob.ar/" target="_blank"><img src="images/datafiscal.jpg" alt="Datos Fiscales"></a>
+            <a href="https://www.afip.gob.ar/" target="_blank"><img class="logo__afip" src="images/datafiscal.jpg" alt="Datos Fiscales"></a>
         </div>
     </footer>
     <!-- Se agrega Bootstrap JS -->

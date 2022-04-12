@@ -10,225 +10,56 @@
     font-size: 25rem;
 }
 .navbar__imagen img{
-    height: 15rem;
     width: 25rem;
-    border: 0.1rem solid #ffffff;
-    border-radius: 2rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: 0.3rem solid #d7fa37;
 }
-.navegacion__menu{
-    margin: auto;
-}
-.navegacion__menu li a{
-    margin: 3rem;
-}
+
+
 /* ------------ Index ------------ */
-.index__titulo{
+.index__contenido{
     text-align: center;
+}
+.index__titulo{
     font-size: 4rem;
-    border: #570D66 solid 4px;
-    border-radius: 7px;
-    margin: 2rem;
+    text-align: center;
 }
 .index__subtitulo{
-    text-align: center;
     font-size: 2rem;
+    text-align: center;
     font-style: italic;
 }
-.recomendacion__index{
-    margin-top: 2rem;
+.recomendaciones__index--titulo{
+    font-size: 3rem;
     text-align: center;
 }
-.recomendaciones__index--titulo{
-    font-size: 5rem;
-    animation-duration: 5s;
-    animation-name: girar;
-    animation-iteration-count: infinite;
+.recomendaciones__index--subtitulo
+{
+    font-size: 2rem;
+    text-align: center;
 }
-@keyframes girar {
-    0%{
-        transform: rotate(5deg);
-    }
-    50%{
-        transform: rotate(-5deg);
-    }
-    100%{
-        transform: rotate(5deg);
-    }
-}
-.recomendaciones__index--subtitulo{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 3rem;
+.recomendacion__iframe{
+    width: 30rem;
+    height: auto;
 }
 .recomendacion__parrafos{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    animation-duration: 3s;
-    animation-name: parpadear;
-    animation-iteration-count: infinite;
+    font-size: 2.5rem;
 }
-@keyframes parpadear{
-    0%{
-        border-radius: 1rem;
-        border: #CF1FF2 outset 3px;
-    }
-    100%{
-        border: #570D66 outset 3px;
-        border-radius: 1rem;
-    }
-}
-.recomendacion__parrafos span{
-    color: #570D66;
+.negrita{
     font-weight: bold;
     font-size: 1.5rem;
-}
-/* ------------ Store ------------ */
-.store__titulo{
-    text-align: center;
-    font-size: 4rem;
-    border: #570D66 solid 4px;
-    border-radius: 7px;
-    margin: 2rem;
-}
-.contenedor__cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
-.card{
-    margin: 3rem;
-    border-radius: 1rem;
-}
-.card img{
-    height: 18rem;
-}
-.card-body h5{
-    font-size: 3rem;
-}
-.card-body{
-    font-size: 2rem;
-}
-/* ------------ Ayuda ------------ */
-.titulo__ayuda{
-    font-size: 4rem;
-    border: #570D66 solid 4px;
-    border-radius: 7px;
-    text-align: center;
-    margin: 2rem;
-}
-.ayuda h2{
-    text-decoration: underline;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-.ayuda__explain{
-    border: whitesmoke outset 3.5px;
-    border-radius: 7px;
-    margin-left: 1rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-/* ------------ Quienes somos ------------ */
-.quienessomos__titulo{
-    font-size: 4rem;
-    border: #570D66 solid 4px;
-    border-radius: 7px;
-    text-align: center;
-    margin: 2rem;
-}
-.quienessomos__contenido{
-    font-size: 3rem;
-}
-.quienessomos__contenido img{
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-}
-.quienessomos__contenido span{
     color: #570D66;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-/* ------------ Contacto ------------ */
-.contactenos__section{
-    font-size: 6rem;
-    text-align: center;
-}
-.contactenos__titulo{
-    font-size: 4rem;
-    border: #570D66 solid 4px;
-    border-radius: 7px;
-    text-align: center;
-    margin: 2rem;
-}
-.contacto{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
-.contacto__nombre{
-    margin-bottom: 2rem;
-}
-.contacto__email{
-    margin-bottom: 2rem;
-}
-.input__name{
-    width: 30rem;
-    margin: auto;
-}
-.input__email{
-    width: 30rem;
-    margin: auto;
-}
-.contactenos__section h2{
-    font-size: 5rem;
-    margin-top: 2rem;
-}
-label{
-    margin-bottom: 2rem;
-}
-textarea{
-    height: 20rem;
-}
-.botonesForm{
-    margin-top: 2rem;
-}
-button{
-    width: 11rem;
-    height: 4rem;
-    margin-bottom: 1rem;
 }
 /* ------------ Footer ------------ */
 footer{
-    background-color: #000000;
-    font-size: 3rem;
-    color: #ffffff;
-    height: 10rem;   
-}
-.footer__contenido{
-    padding-top: 1.2rem;
+    background-color: #212529;
+    color: #96989a;
+    font-size: 2.5rem;
+    height: 10rem;
 }
 footer img{
-    width: 5.6rem;
-    height: 5.7rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 1rem;
 }
-/* ------------ Media Queries Mobile ------------ */
-@media screen and (max-width: 767px){
-    .recomendacion__iframe{
-        width: auto;
-        height: auto;
-    }
-    footer{
-       height: 12rem; 
-    }
-    .footer__contenido{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
-
