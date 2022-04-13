@@ -19,48 +19,46 @@
   <title>GG No team</title>
 </head>
 
-<body>
-  <header>
+<body class="container-fluid">
+  <header class="row">
     <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand navbar__imagen" href="../index.html"><img src="../images/logo-empresa.jpg"
-            alt="Logo Empresa"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion__menu">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/store.html">Store</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/ayuda.html">Ayuda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark col-xs-12 col-sm-12 col-md-12">
+        <div class="container">
+          <a class="navbar-brand navbar__imagen" href="../index.html"><img src="../images/logo-empresa.jpg" alt="Logo Empresa"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion__menu">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ayuda.html">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+</header>
 
-
-
-  <main class="container">
+  <main class="row">
     <!-- Preguntas Frecuentes-->
-    <h1 class="animate__bounceIn titulo__ayuda">¿Con qué podemos ayudarte?</h1>
-    <section class="ayuda">
-      <h2>Devoluciones:</h2>
-
+    
+    <section class="ayuda col-xs-12 col-sm-12 col-md-12">
+      <h1 class="animate__bounceIn ayuda__titulo">¿Con qué podemos ayudarte?</h1>
+      <h2 class="ayuda__subtitulo">Devoluciones:</h2>
+        <div>
           <article class="ayuda__explain">
             <h3>¿Puedo cambiar un producto?</h3>
             <p>Si bien no podemos cambiar un producto que compraste, podés solicitar la devolución y recuperar tu
@@ -89,7 +87,7 @@
             </p>
           </article>
 
-      <h2>Formas de pago:</h2>
+      <h2 class="ayuda__subtitulo">Formas de pago:</h2>
 
           <article class="ayuda__explain">
             <h3>¿Cómo puedo pagar mi compra?</h3>
@@ -107,7 +105,7 @@
               (Visa y Mastercard).</p>
           </article>
 
-      <h2>Envios:</h2>
+      <h2 class="ayuda__subtitulo">Envios:</h2>
 
           <article class="ayuda__explain">
             <h3>¿Hacemos envios a todo el pais?</h3>
@@ -123,7 +121,7 @@
           </article>
 
 
-      <h2>Garantia:</h2>
+      <h2 class="ayuda__subtitulo">Garantia:</h2>
 
           <article class="ayuda__explain">
             <h3>¿Cuanto tiempo es la garantia?</h3>
@@ -131,16 +129,15 @@
               web en cada producto.
             </p>
           </article>
-
+        </div>
     </section>
   </main>
-  <!-- FOOTER -->
-  <!-- FOOTER -->
-  <footer class="container-fluid">
-    <div class="d-flex justify-content-around align-items-center footer__contenido">
-      <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
-      <a href="https://www.afip.gob.ar/" target="_blank"><img src="../images/datafiscal.jpg" alt="Datos Fiscales"></a>
-    </div>
+    <!-- FOOTER -->
+    <footer class="row">
+      <div class="d-flex justify-content-around align-items-center col-xs-12 col-sm-12 col-md-12">
+          <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
+          <a href="https://www.afip.gob.ar/" target="_blank"><img class="logo__afip" src="../images/datafiscal.jpg" alt="Datos Fiscales"></a>
+      </div>
   </footer>
   <!-- Se agrega Bootstrap JS -->
   <script src="../js/bootstrap.min.js"></script>

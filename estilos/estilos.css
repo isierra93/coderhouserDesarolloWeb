@@ -15,8 +15,11 @@
     border-radius: 1rem;
     border: 0.3rem solid #d7fa37;
 }
-
-
+@media screen and (min-width: 1280px){
+    .nav-item{
+        margin: 3rem;
+    }
+}
 /* ------------ Index ------------ */
 .index__contenido{
     text-align: center;
@@ -45,12 +48,23 @@
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
-
 }
 .recomendacion__iframe{
-    width: 30rem;
-    height: 35rem;
+    width: 90%;
+    height: 33rem;
     margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px){
+    .recomendacion__iframe{
+        width: 65rem;
+        height: 40rem;
+    }
+}
+@media screen and (min-width: 1280px){
+    .recomendacion__iframe{
+        width: 75rem;
+        height: 40rem;
+    }
 }
 .recomendacion__parrafos{
     font-size: 2.5rem;
@@ -70,6 +84,9 @@
     border-radius: 7px;
     margin: 2rem;
 }
+.store__contenido{
+    margin-bottom: 2rem;
+}
 .card-title{
     font-size: 2rem;
     font-weight: 700;
@@ -79,14 +96,87 @@
 }
 .card-button{
     font-size: 1.2rem;
-    background-color: red;
+    background-color: #CF1FF2;
     border: 0;
+}
+.card-button:hover{
+    background-color: #570D66;
 }
 .card-img-top{
     height: 17rem;
 }
-
-
+/* ------------ Ayuda ------------ */
+.ayuda{
+    margin-bottom: 2rem
+}
+.ayuda__titulo{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    border: #570D66 solid 4px;
+    border-radius: 7px;
+    margin: 2rem;
+}
+.ayuda__subtitulo{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.ayuda__explain{
+    font-size: 2rem;
+    border: whitesmoke outset 3.5px;
+    border-radius: 7px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.ayuda__explain h3{
+    text-decoration: double;
+}
+/* ------------ Quienes somos ------------ */
+.quienessomos__titulo{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    border: #570D66 solid 4px;
+    border-radius: 7px;
+    margin: 2rem;
+}
+.quienessomos__descripcion{
+    margin-top: 2rem;
+}
+.quienessomos__contenido{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+/* ------------ Contacto ------------ */
+.contactenos__titulo{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    border: #570D66 solid 4px;
+    border-radius: 7px;
+    margin: 2rem;
+}
+.contacto{
+    font-size: 5rem;
+    text-align: center;
+    width: 75%;
+}
+.input__name{
+    width: 90%;
+    margin: auto;
+}
+.input__email{
+    width: 90%;
+    margin: auto;
+}
+textarea{
+    height: 35rem;
+}
+.botonesForm button{
+    width: 25rem;
+ 
+}
 /* ------------ Footer ------------ */
 footer{
     background-color: #212529;
