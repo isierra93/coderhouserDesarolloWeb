@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
+    padding: 2rem;
 }
 .navegacion__logo{
     width: 15rem;
@@ -33,6 +34,11 @@
     border: 0.2rem solid #ffffff;
 }
 .navegacion__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navegacion__menu li a{
     text-decoration: none;
     list-style: none;
     color: #ffffff;
@@ -40,6 +46,8 @@
 /* INDEX */
 .index__contenido{
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .titulo__index{
     font-size: 4rem;
@@ -51,4 +59,41 @@
 }
 .index__imagenes{
     width: 90%;
+}
+.recomendaciones__index--titulo{
+    font-size: 3rem;
+}
+.recomendaciones__index--subtitulo{
+    font-size: 2rem;
+}
+.recomendacion__iframe{
+    width: 90%;
+}
+.recomendacion__parrafos{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.recomendacion__parrafos span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #570D66;
+}
+
+/* Footer */
+.footer__contenido{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 2rem 2rem;
+}
+.fiscal__data{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.fiscal__qr img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
 }
