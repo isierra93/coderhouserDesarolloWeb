@@ -2,95 +2,80 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-  <!-- Se agrega Bootstrap CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <!-- Se agrega font de Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Hoja de estilos CSS -->
-  <link rel="stylesheet" href="../estilos/estilos.css">
-  <title>GG No team</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Animate CSS -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Se agrega font de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <title>GG No team</title>
 </head>
 
-<body class="container-fluid">
-  <header class="row">
-    <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark col-xs-12 col-sm-12 col-md-12">
-        <div class="container">
-          <a class="navbar-brand navbar__imagen" href="../index.html"><img src="../images/logo-empresa.jpg" alt="Logo Empresa"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion__menu">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="store.html">Store</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ayuda.html">Ayuda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
+<body>
+
+    <header>
+        <!-- Barra de navegacion -->
+        <nav class="navegacion">
+            <div>
+                <a href="../index.html">
+                    <img class="navegacion__logo" src="../images/logo-empresa.jpg" alt="Logo Empresa">
+                </a>
+            </div>
+
+            <ul class="navegacion__menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+                <li><a href="quienes-somos.html">Quienes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
-</header>
 
-  <main class="row">
+        </nav>
+    </header>
 
-    <section class="contactenos__section col-xs-12 col-sm-12 col-md-12">
-      <h2 class="contactenos__titulo animate__animated animate__zoomInLeft">Contactenos</h2>
-      <!-- Formulario -->
+    <main>
 
-      <form class="contacto container form-floating d-flex justify-content-center flex-column" action="" method="get">
+        <h2 class="contactenos__titulo animate__animated animate__fadeInUp">Contactenos</h2>
 
-        <div class="mb-5">
-          <label class="contacto__nombre form-label" for="nombre">Ingrese su nombre:</label>
-          <input class="form-control input__name" type="text" name="nombre" placeholder="Nombre...">
-        </div>
+        <section class="contactenos__section">
+        <!-- Formulario -->
+            
+            <form class="contacto" action="" method="get">
+                
+                <label class="contacto__nombre" for="nombre">Ingrese su nombre:</label>
+                <input class="input__nombre" type="text" name="nombre" placeholder="Nombre...">
 
-        <div class="mb-5">
-          <label class="contacto__email form-label" for="email">Ingrese su email:</label>
-          <input class="form-control input__email" type="email" name="email" placeholder="Email...">
-        </div>
 
-        <div class="mb-4">
-          <label for="mensaje">Ingrese su consulta:</label>
-          <textarea class="form-control" name="mensaje" placeholder="Mensaje..."></textarea>
-        </div>
+                <label class="contacto__email" for="email">Ingrese su email:</label>
+                <input class="input__email" type="email" name="email" placeholder="Email...">
 
-        <div class="botonesForm mb-4">
-          <button type="reset" class="btn btn-dark">Borrar</button>
-          <button type="submit" class="btn btn-dark">Enviar</button>
-        </div>
-      </form>
-    </section>
-  </main>
+                <label for="mensaje">Ingrese su consulta:</label>
+                <textarea rows="20" cols="50" name="mensaje" placeholder="Mensaje..."></textarea>
+
+                <div class="botonesForm">
+                <input class="botonInput" type="reset" value="Borrar">
+                <input class="botonInput" type="submit" value="Enviar">
+                </div>
+                
+            </form>
+        </section>
+    </main>
     <!-- FOOTER -->
-    <footer class="row">
-      <div class="d-flex justify-content-around align-items-center col-xs-12 col-sm-12 col-md-12">
-          <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
-          <a href="https://www.afip.gob.ar/" target="_blank"><img class="logo__afip" src="../images/datafiscal.jpg" alt="Datos Fiscales"></a>
-      </div>
-  </footer>
-  <!-- Se agrega Bootstrap JS -->
-  <script src="../js/bootstrap.min.js"></script>
-</body>
+    <footer class="footer__contenido">
 
+        <div class="fiscal__data">
+            <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
+        </div>
+        <div class="fiscal__qr">
+            <a href="https://www.afip.gob.ar/"><img src="../images/datafiscal.jpg" alt="Datos Fiscales"></a>
+        </div>
+
+    </footer>
+</body>
 </html>
