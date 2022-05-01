@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- SEO -->
+    <meta name="description" content="Reviews de videojuegos actuales a la venta">
+    <meta name="keywords"
+        content="NOTICIAS, REVIEW, GAMES, JUEGOS, VIDEOJUEGOS, REVIEW, STEAM, XBOX, PS, PLAYSTATION, GAMEPASS, STORE">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Se agrega font de Google -->
@@ -14,15 +18,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="estilos/styles.css">
-    <title>GG No team</title>
+    <title>GG No team | Review de videojuegos</title>
 </head>
 
-<body>
+<body class="grid">
 
     <header>
         <!-- Barra de navegacion -->
-        <nav class="navegacion">
-            <div>
+        <nav class="navegacion grid__nav">
+            <div class="contenedor__navegacion-logo">
                 <a href="index.html">
                     <img class="navegacion__logo" src="images/logo-empresa.jpg" alt="Logo Empresa">
                 </a>
@@ -39,10 +43,10 @@
         </nav>
     </header>
 
-    <main class="index__contenido">
+    <main class="index__contenido grid__main">
 
-        <h1 class="titulo__index animate__animated animate__fadeInUp">GG NO TEAM</h1>
-        <h3 class="subtitulo__index">Encontra lo que necesitas.</h3>
+        <h1 class="animate__animated animate__fadeInUp titulardos__index">GG NO TEAM</h1>
+        <h3 class="subtitulo__index">Encontrá lo que necesitas.</h3>
 
         <section class="section__index">
 
@@ -163,10 +167,48 @@
                 </div>
             </article>
         </section>
-    </main>
+        <div class="newsletter">
+            <div class="newsletter__img">
+                <img src="images/newsletter.jpg" alt="Newsletter">
+            </div>
+            <div class="newsletter__texto">
+                <h3>Queres recibir nuestro Newsletter?</h3>
+                <form class="newsletter__form" action="">
+                    <input class="suscribir__email" type="email" name="" id="">
+                    <input class="boton__suscribir" type="submit" value="Suscribirme">
+                </form>
+            </div>
 
+        </div>
+
+        <aside class="aside__noticias">
+            <div class="noticias__bienvenida">
+                <h3>Sumate a nuestro Twitter!</h3>
+                <p>🎮¿Como andan? 🎮
+
+                    Quería pasar a desearles un muy feliz día, espero que sea jugando jueguitos, viendo algo o con
+                    amigxs, descansen❤
+
+                    Desde acá siempre para entretener e informar 😎</p>
+                    <img src="images/twitter.jpg" alt="">
+            </div>
+            <div class="noticias__twitter">
+                <blockquote class="twitter-tweet" data-lang="es" data-dnt="true" data-theme="dark">
+                    <p lang="es" dir="ltr">🚨MALDITOS NERDS RECARGADO🚨<br>Contenido sobra y no queremos que se pierdan
+                        nada, acá algunas de las últimas novedades 💫<br>-Lunes de <a
+                            href="https://twitter.com/Vorterix?ref_src=twsrc%5Etfw">@Vorterix</a> 🟢17HS🟢<br>-Nuevos
+                        canales de YouTube<br>-Cuenta de Tik Tok<br>Solo 3 de las cosas que NO se puede perder <br>🟢Acá
+                        TODO🟢:<br>👉<a href="https://t.co/zkZBTs8saR">https://t.co/zkZBTs8saR</a>👈</p>&mdash; Malditos
+                    Nerds (@MalditosNerdsVX) <a
+                        href="https://twitter.com/MalditosNerdsVX/status/1506949005527429123?ref_src=twsrc%5Etfw">24 de
+                        marzo de 2022</a>
+                </blockquote>
+            </div>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+    </main>
     <!-- FOOTER -->
-    <footer class="footer__contenido">
+    <footer class="footer__contenido grid__footer">
 
         <div class="fiscal__data">
             <p>Copyright © 1999-2022 GG NO TEAM S.R.L. // Balcarce 50, C1064, CABA.</p>
