@@ -68,7 +68,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem; }
   .index__contenido .subtitulo__index {
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: italic; }
   .index__contenido .section__index {
     margin-top: 2rem;
@@ -78,24 +78,31 @@
       border-radius: 25%;
       margin-bottom: 1rem; }
     .index__contenido .section__index .analisis h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem; }
     .index__contenido .section__index .analisis p {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin: 2rem; }
+    .index__contenido .section__index .analisis span {
+      font-style: italic;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #570D66; }
     .index__contenido .section__index .recomendacion__index h3 {
       font-size: 3rem;
       margin-bottom: 1rem; }
     .index__contenido .section__index .recomendacion__index h4 {
-      font-size: 2rem;
-      margin-bottom: 1rem; }
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: bolder;
+      letter-spacing: 1rem; }
     .index__contenido .section__index .recomendacion__index .recomendacion__iframe {
       width: 90%; }
     .index__contenido .section__index .recomendacion__index .recomendacion__parrafos {
-      font-size: 2rem;
+      font-size: 3rem;
       margin: 2rem; }
       .index__contenido .section__index .recomendacion__index .recomendacion__parrafos span {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
         color: #570D66; }
   .index__contenido .newsletter .newsletter__img img {
@@ -145,20 +152,14 @@
       width: 95%; }
 
 /* ----------------------- Store ----------------------- */
-.store__titulo {
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem; }
-
 .card__conteiner {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .card {
-  width: 23rem;
-  height: 33rem;
+  width: 30rem;
+  height: 45rem;
   background: linear-gradient(145deg, #2B86C5 0%, #FF3CAC 100%);
   border-radius: 5px;
   box-shadow: 10px 10px 9px #c5c5c5, -10px -10px 9px #ffffff;
@@ -166,12 +167,12 @@
   margin-bottom: 4rem;
   text-align: center; }
   .card h5 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     text-align: center;
     font-weight: 700;
     margin-bottom: 1rem; }
   .card p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 2rem; }
   .card a {
     text-decoration: none;
@@ -189,12 +190,6 @@
     width: 100%; }
 
 /* ----------------------- Ayuda ----------------------- */
-.ayuda__titulo {
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem; }
-
 .ayuda {
   display: flex;
   flex-direction: column;
@@ -204,7 +199,7 @@
     margin-left: 1rem;
     margin-bottom: 1rem; }
   .ayuda .ayuda__explain {
-    background-color: #EBD4FA;
+    background: linear-gradient(145deg, #2B86C5 0%, #FF3CAC 100%);
     border: whitesmoke outset 0.3rem;
     border-radius: 7px;
     margin-left: 1rem;
@@ -212,68 +207,71 @@
     margin-bottom: 2rem; }
     .ayuda .ayuda__explain h3 {
       font-weight: 900;
-      font-size: 2rem; }
+      font-size: 3rem;
+      color: #570D66;
+      padding: 1rem 1rem 1rem 1rem; }
     .ayuda .ayuda__explain p {
-      font-size: 2rem; }
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem 1rem 1rem 1rem; }
 
 /* ----------------------- Quienes somos ----------------------- */
-.quienessomos__titulo {
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem; }
-
 .quienessomos {
   display: flex;
   flex-direction: column;
   align-items: center; }
   .quienessomos img {
-    width: 80%;
+    width: 90%;
     border-radius: 15%; }
   .quienessomos p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 2rem; }
     .quienessomos p span {
       color: #570D66;
       font-weight: bold;
-      font-size: 1.2rem; }
+      font-size: 2rem; }
 
 /* ----------------------- Contacto ----------------------- */
-.contactenos__titulo {
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem; }
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 3rem; }
-  .contacto label {
-    margin: 1rem; }
-  .contacto .input__nombre:focus {
-    width: 80%; }
-  .contacto .input__email:focus {
-    width: 80%; }
-  .contacto textarea {
-    width: 90%; }
-  .contacto .botonesForm {
+.contactenos__section {
+  margin-bottom: 0; }
+  .contactenos__section .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem; }
+    .contactenos__section .contacto label {
+      margin: 1rem; }
+    .contactenos__section .contacto .input__nombre {
+      width: 90%; }
+    .contactenos__section .contacto .input__email {
+      width: 90%; }
+    .contactenos__section .contacto textarea {
+      width: 90%; }
+    .contactenos__section .contacto .botonesForm {
+      margin: 2rem; }
+      .contactenos__section .contacto .botonesForm input {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        border-radius: 1rem;
+        background-color: #212121;
+        color: #d7fa37;
+        font-weight: 500; }
+        .contactenos__section .contacto .botonesForm input:hover {
+          background-color: #d7fa37;
+          color: #212121;
+          font-weight: 600; }
+  .contactenos__section .contacto__mapa {
     margin: 2rem; }
-    .contacto .botonesForm input {
-      width: 10rem;
-      height: 3rem;
-      font-size: 1.5rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-      border-radius: 1rem;
-      background-color: #212121;
-      color: #d7fa37;
-      font-weight: 500; }
-      .contacto .botonesForm input:hover {
-        background-color: #d7fa37;
-        color: #212121;
-        font-weight: 600; }
+    .contactenos__section .contacto__mapa h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem; }
+    .contactenos__section .contacto__mapa iframe {
+      width: 99%;
+      height: 30rem; }
 
 /* ----------------------- Footer ----------------------- */
 .footer__contenido {
@@ -352,12 +350,12 @@
     margin: 5rem 2rem 5rem 2rem; }
     .quienessomos img {
       width: 50%; }
-  .contacto .input__nombre:focus {
-    width: 30%; }
-  .contacto .input__email:focus {
-    width: 30%; }
-  .contacto textarea {
-    width: 50%; }
+  .contactenos__section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contactenos__section .contacto__mapa iframe {
+      margin-top: 1rem; }
   .footer__contenido {
     display: flex;
     flex-direction: row;

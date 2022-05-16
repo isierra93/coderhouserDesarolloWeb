@@ -102,7 +102,7 @@ $titulos: (fsize: 4rem,
     margin-bottom: 2rem;
 
     .subtitulo__index {
-        font-size: 2rem;
+        font-size: 3rem;
         font-style: italic;
     }
 
@@ -118,13 +118,19 @@ $titulos: (fsize: 4rem,
 
         .analisis {
             h3 {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin-bottom: 1rem;
             }
 
             p {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 margin: 2rem;
+            }
+            span{
+                font-style: italic;
+                font-size: 2rem;
+                font-weight: 700;
+                color: #570D66;
             }
         }
 
@@ -135,8 +141,10 @@ $titulos: (fsize: 4rem,
             }
 
             h4 {
-                font-size: 2rem;
+                font-size: 3rem;
                 margin-bottom: 1rem;
+                font-weight: bolder;
+                letter-spacing: 1rem;
             }
 
             .recomendacion__iframe {
@@ -144,11 +152,11 @@ $titulos: (fsize: 4rem,
             }
 
             .recomendacion__parrafos {
-                font-size: 2rem;
+                font-size: 3rem;
                 margin: 2rem;
 
                 span {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     font-weight: bold;
                     color: #570D66;
                 }
@@ -232,13 +240,6 @@ $titulos: (fsize: 4rem,
 }
 
 /* ----------------------- Store ----------------------- */
-.store__titulo {
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
 .card__conteiner {
     display: flex;
     flex-direction: column;
@@ -246,8 +247,8 @@ $titulos: (fsize: 4rem,
 }
 
 .card {
-    width: 23rem;
-    height: 33rem;
+    width: 30rem;
+    height: 45rem;
     background: linear-gradient(145deg, #2B86C5 0%, #FF3CAC 100%);
     border-radius: 5px;
     box-shadow: 10px 10px 9px #c5c5c5,
@@ -258,14 +259,14 @@ $titulos: (fsize: 4rem,
 
 
     h5 {
-        font-size: 2.2rem;
+        font-size: 3rem;
         text-align: center;
         font-weight: 700;
         margin-bottom: 1rem;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
 
@@ -295,13 +296,6 @@ $titulos: (fsize: 4rem,
 }
 
 /* ----------------------- Ayuda ----------------------- */
-.ayuda__titulo {
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
 .ayuda {
     display: flex;
     flex-direction: column;
@@ -314,103 +308,106 @@ $titulos: (fsize: 4rem,
     }
 
     .ayuda__explain {
-        background-color: #EBD4FA;
+        background: linear-gradient(145deg, #2B86C5 0%, #FF3CAC 100%);
         border: whitesmoke outset 0.3rem;
         border-radius: 7px;
         margin-left: 1rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
-
         h3 {
             font-weight: 900;
-            font-size: 2rem;
+            font-size: 3rem;
+            color: #570D66;
+            padding: 1rem 1rem 1rem 1rem;
         }
-
         p {
             font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 1rem 1rem 1rem;
         }
     }
 }
 
 /* ----------------------- Quienes somos ----------------------- */
-.quienessomos__titulo {
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
 .quienessomos {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     img {
-        width: 80%;
+        width: 90%;
         border-radius: 15%;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin: 2rem;
 
         span {
             color: #570D66;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 2rem;
         }
     }
 }
 
 /* ----------------------- Contacto ----------------------- */
-.contactenos__titulo {
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 3rem;
-
-    label {
-        margin: 1rem;
-    }
-
-    .input__nombre:focus {
-        width: 80%;
-    }
-
-    .input__email:focus {
-        width: 80%;
-    }
-
-    textarea {
-        width: 90%;
-    }
-
-    .botonesForm {
-        margin: 2rem;
-
-        input {
-            width: 10rem;
-            height: 3rem;
-            font-size: 1.5rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            border-radius: 1rem;
-            background-color: #212121;
-            color: #d7fa37;
-            font-weight: 500;
-
-            &:hover {
-                background-color: #d7fa37;
-                color: #212121;
-                font-weight: 600;
+.contactenos__section{
+    margin-bottom: 0;
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 3rem;
+    
+        label {
+            margin: 1rem;
+        }
+    
+        .input__nombre{
+            width: 90%;
+        }
+    
+        .input__email{
+            width: 90%;
+        }
+    
+        textarea {
+            width: 90%;
+        }
+    
+        .botonesForm {
+            margin: 2rem;
+    
+            input {
+                width: 10rem;
+                height: 3rem;
+                font-size: 1.5rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                border-radius: 1rem;
+                background-color: #212121;
+                color: #d7fa37;
+                font-weight: 500;
+    
+                &:hover {
+                    background-color: #d7fa37;
+                    color: #212121;
+                    font-weight: 600;
+                }
             }
+        }
+    }
+    .contacto__mapa{
+        margin: 2rem;
+        h2{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        iframe{
+            width: 99%;
+            height: 30rem;
         }
     }
 }
@@ -546,20 +543,16 @@ $titulos: (fsize: 4rem,
         }
     }
 
-    .contacto {
-        .input__nombre:focus {
-            width: 30%;
-        }
-
-        .input__email:focus {
-            width: 30%;
-        }
-
-        textarea {
-            width: 50%;
+    .contactenos__section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contacto__mapa{
+            iframe{
+                margin-top: 1rem;
+            }
         }
     }
-
     .footer__contenido {
         display: flex;
         flex-direction: row;
