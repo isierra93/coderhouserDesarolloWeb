@@ -8,9 +8,11 @@
 
 /* MAP EACH */
 
-$grid_colors: (grid__nav: #000000,
+$grid_colors: (
+    grid__nav: #000000,
     grid: whitesmoke,
-    footer__contenido: #000000);
+    footer__contenido: #000000
+);
 
 @each $grid_colors,
 $color in $grid_colors {
@@ -21,7 +23,8 @@ $color in $grid_colors {
 
 /* MAP GET */
 
-$titulos: (fsize: 4rem,
+$titulos: (
+    fsize: 4rem,
     talign: center,
     mt: 2rem,
     mb: 1rem,
@@ -126,7 +129,8 @@ $titulos: (fsize: 4rem,
                 font-size: 2rem;
                 margin: 2rem;
             }
-            span{
+
+            span {
                 font-style: italic;
                 font-size: 2rem;
                 font-weight: 700;
@@ -183,12 +187,14 @@ $titulos: (fsize: 4rem,
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 .suscribir__email {
                     width: 25rem;
                     height: 5rem;
                     font-size: 2rem;
                     margin-bottom: 2rem;
                 }
+
                 .boton__suscribir {
                     background-color: #000000;
                     color: #d7fa37;
@@ -197,7 +203,8 @@ $titulos: (fsize: 4rem,
                     height: 5rem;
                     font-size: 2rem;
                     font-weight: 900;
-                    &:hover{
+
+                    &:hover {
                         background-color: #d7fa37;
                         color: #000000;
                     }
@@ -256,8 +263,6 @@ $titulos: (fsize: 4rem,
     transition: box-shadow 0.7s ease;
     margin-bottom: 4rem;
     text-align: center;
-
-
     h5 {
         font-size: 3rem;
         text-align: center;
@@ -267,7 +272,9 @@ $titulos: (fsize: 4rem,
 
     p {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 
     a {
@@ -314,12 +321,14 @@ $titulos: (fsize: 4rem,
         margin-left: 1rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
+
         h3 {
             font-weight: 900;
             font-size: 3rem;
             color: #570D66;
             padding: 1rem 1rem 1rem 1rem;
         }
+
         p {
             font-size: 2rem;
             font-weight: bold;
@@ -352,33 +361,37 @@ $titulos: (fsize: 4rem,
 }
 
 /* ----------------------- Contacto ----------------------- */
-.contactenos__section{
+.contactenos__section {
     margin-bottom: 0;
+
     .contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 3rem;
-    
+
         label {
             margin: 1rem;
         }
-    
-        .input__nombre{
+
+        .input__nombre {
             width: 90%;
+            border-radius: 1rem;
         }
-    
-        .input__email{
+
+        .input__email {
             width: 90%;
+            border-radius: 1rem;
         }
-    
+
         textarea {
             width: 90%;
+            border-radius: 1rem;
         }
-    
+
         .botonesForm {
             margin: 2rem;
-    
+
             input {
                 width: 10rem;
                 height: 3rem;
@@ -389,7 +402,7 @@ $titulos: (fsize: 4rem,
                 background-color: #212121;
                 color: #d7fa37;
                 font-weight: 500;
-    
+
                 &:hover {
                     background-color: #d7fa37;
                     color: #212121;
@@ -398,14 +411,17 @@ $titulos: (fsize: 4rem,
             }
         }
     }
-    .contacto__mapa{
+
+    .contacto__mapa {
         margin: 2rem;
-        h2{
+
+        h2 {
             font-size: 3rem;
             text-align: center;
             margin-bottom: 2rem;
         }
-        iframe{
+
+        iframe {
             width: 99%;
             height: 30rem;
         }
@@ -441,9 +457,9 @@ $titulos: (fsize: 4rem,
 
         grid-template-areas:
 
-            "grid__nav" "grid__nav" "grid__nav"
-            "grid__main" "grid__main" "grid__main"
-            "grid__footer" "grid__footer" "grid__footer"
+            "grid__nav""grid__nav""grid__nav"
+            "grid__main""grid__main""grid__main"
+            "grid__footer""grid__footer""grid__footer"
         ;
     }
 
@@ -487,25 +503,30 @@ $titulos: (fsize: 4rem,
 
             }
         }
-        .newsletter{
+
+        .newsletter {
             margin-bottom: 3rem;
-            .newsletter__img{
-                img{
+
+            .newsletter__img {
+                img {
                     height: 55rem;
                 }
             }
-            .newsletter__texto{
-                .newsletter__form{
+
+            .newsletter__texto {
+                .newsletter__form {
                     flex-direction: row;
                     justify-content: space-evenly;
                     align-items: center;
-                    .suscribir__email{
+
+                    .suscribir__email {
                         width: 55rem;
                         margin-bottom: 0;
                     }
                 }
             }
         }
+
         .aside__noticias {
             display: flex;
             flex-direction: row;
@@ -543,16 +564,18 @@ $titulos: (fsize: 4rem,
         }
     }
 
-    .contactenos__section{
+    .contactenos__section {
         display: flex;
         justify-content: center;
         align-items: center;
-        .contacto__mapa{
-            iframe{
+
+        .contacto__mapa {
+            iframe {
                 margin-top: 1rem;
             }
         }
     }
+
     .footer__contenido {
         display: flex;
         flex-direction: row;

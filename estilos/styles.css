@@ -173,7 +173,9 @@
     margin-bottom: 1rem; }
   .card p {
     font-size: 2rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem; }
   .card a {
     text-decoration: none;
     font-size: 2rem;
@@ -242,11 +244,14 @@
     .contactenos__section .contacto label {
       margin: 1rem; }
     .contactenos__section .contacto .input__nombre {
-      width: 90%; }
+      width: 90%;
+      border-radius: 1rem; }
     .contactenos__section .contacto .input__email {
-      width: 90%; }
+      width: 90%;
+      border-radius: 1rem; }
     .contactenos__section .contacto textarea {
-      width: 90%; }
+      width: 90%;
+      border-radius: 1rem; }
     .contactenos__section .contacto .botonesForm {
       margin: 2rem; }
       .contactenos__section .contacto .botonesForm input {
@@ -294,7 +299,7 @@
     display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: 0.2fr 4fr 0.2fr;
-    grid-template-areas: "grid__nav" "grid__nav" "grid__nav" "grid__main" "grid__main" "grid__main" "grid__footer" "grid__footer" "grid__footer"; }
+    grid-template-areas: "grid__nav" "grid__nav" "grid__nav" "grid__main" "grid__main" "grid__main" "grid__footer" "grid__footer" "grid__footer"; }
   .navegacion {
     display: flex;
     flex-direction: row;
