@@ -92,9 +92,6 @@ $titulos: (
         justify-content: center;
         color: #ffffff;
 
-        &:hover {
-            color: #d7fa37;
-        }
     }
 }
 
@@ -204,7 +201,7 @@ $titulos: (
                     font-size: 2rem;
                     font-weight: 900;
 
-                    &:hover {
+                    &:focus {
                         background-color: #d7fa37;
                         color: #000000;
                     }
@@ -283,15 +280,6 @@ $titulos: (
         color: white;
         transition: all 1s;
 
-        &:hover {
-            color: #0072c4;
-            font-size: 2.5rem;
-        }
-    }
-
-    &:hover {
-        box-shadow: 10px 10px 15px #c5c5c5,
-            -10px -10px 15px #ffffff;
     }
 
     .card-img-top {
@@ -403,7 +391,7 @@ $titulos: (
                 color: #d7fa37;
                 font-weight: 500;
 
-                &:hover {
+                &:focus{
                     background-color: #d7fa37;
                     color: #212121;
                     font-weight: 600;
@@ -475,6 +463,11 @@ $titulos: (
             li {
                 padding: 2rem;
                 list-style: none;
+                a{
+                    &:hover {
+                        color: #d7fa37;
+                    }
+                }
             }
         }
     }
@@ -550,6 +543,16 @@ $titulos: (
 
         .card {
             margin: 2rem;
+            a{
+                &:hover {
+                    color: #0072c4;
+                    font-size: 2.5rem;
+                }
+            }
+            &:hover {
+                box-shadow: 10px 10px 15px #c5c5c5,
+                    -10px -10px 15px #ffffff;
+            }
         }
 
     }

@@ -59,8 +59,6 @@
     display: flex;
     justify-content: center;
     color: #ffffff; }
-    .navegacion .navegacion__menu li a:hover {
-      color: #d7fa37; }
 
 /* ----------------------- Index ----------------------- */
 .index__contenido {
@@ -129,7 +127,7 @@
       height: 5rem;
       font-size: 2rem;
       font-weight: 900; }
-      .index__contenido .newsletter .newsletter__texto form .boton__suscribir:hover {
+      .index__contenido .newsletter .newsletter__texto form .boton__suscribir:focus {
         background-color: #d7fa37;
         color: #000000; }
   .index__contenido .aside__noticias {
@@ -181,11 +179,6 @@
     font-size: 2rem;
     color: white;
     transition: all 1s; }
-    .card a:hover {
-      color: #0072c4;
-      font-size: 2.5rem; }
-  .card:hover {
-    box-shadow: 10px 10px 15px #c5c5c5, -10px -10px 15px #ffffff; }
   .card .card-img-top {
     border-radius: 5px;
     height: 50%;
@@ -264,7 +257,7 @@
         background-color: #212121;
         color: #d7fa37;
         font-weight: 500; }
-        .contactenos__section .contacto .botonesForm input:hover {
+        .contactenos__section .contacto .botonesForm input:focus {
           background-color: #d7fa37;
           color: #212121;
           font-weight: 600; }
@@ -310,6 +303,8 @@
       .navegacion .navegacion__menu li {
         padding: 2rem;
         list-style: none; }
+        .navegacion .navegacion__menu li a:hover {
+          color: #d7fa37; }
   .index__contenido .section__index .analisis {
     display: flex;
     flex-direction: row;
@@ -349,6 +344,11 @@
     justify-content: space-evenly; }
     .card__conteiner .card {
       margin: 2rem; }
+      .card__conteiner .card a:hover {
+        color: #0072c4;
+        font-size: 2.5rem; }
+      .card__conteiner .card:hover {
+        box-shadow: 10px 10px 15px #c5c5c5, -10px -10px 15px #ffffff; }
   .quienessomos {
     display: flex;
     flex-direction: row;
